@@ -1,2 +1,2 @@
 # ForceHotspot
-force turn on hotspot in window PC
+Forcing Hotspot on Windows without Internet
