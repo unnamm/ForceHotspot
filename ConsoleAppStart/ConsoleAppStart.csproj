@@ -6,7 +6,13 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
 
+	  <!--publish self contained-->
+	  <SelfContained>true</SelfContained>
+
+	  <!--one exe file-->
 	  <PublishSingleFile>true</PublishSingleFile>
+	  
+	  <!--except unused dll-->
 	  <PublishTrimmed>true</PublishTrimmed>
 	  
 	  <!-- except .pdb -->

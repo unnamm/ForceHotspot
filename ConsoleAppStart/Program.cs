@@ -10,6 +10,7 @@
             var data = hs.Run("", "", 71).Result;
 
             Console.WriteLine("connected: " + data);
+            Console.Read();
         }
     }
 }
