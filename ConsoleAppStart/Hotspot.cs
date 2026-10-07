@@ -3,7 +3,7 @@ using Windows.Networking.NetworkOperators;
 
 namespace ConsoleAppStart
 {
-    public class Hotspot
+    public class Hotspot : IAsyncDisposable
     {
         private NetworkOperatorTetheringManager? manager;
 
@@ -32,7 +32,7 @@ namespace ConsoleAppStart
             return manager.GetCurrentAccessPointConfiguration().Ssid;
         }
 
-        public async Task DisposeAsync()
+        public async ValueTask DisposeAsync()
         {
             if (manager != null)
                 await manager.StopTetheringAsync();
